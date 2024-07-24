@@ -1,0 +1,37 @@
+Q1:
+Message1
+container will detect the getMessage1() bean and instantiate it, the message "Message1" will be printed.
+Q2:
+Message1
+hi from Message2
+The getMessage1() method is called, and it prints the message "Message1".
+The getMessage2() method is called, and it prints the message "hi from Message2". The name parameter with the value returned by the getMessage1() method, which is "1".
+Q3:
+Message1
+hi from Message3
+hi from Message2
+Another putput :
+Message1
+hi from Message2
+hi from Message3
+The  difference between the two cases is how the bean dependencies are specified and resolved. In the first case, the dependency on the "3" qualifier could not be satisfied, causing the application to fail. In the second case, the dependency on the "1" qualifier was correctly satisfied, allowing the application to execute all the bean methods successfully.
+
+
+Q4:
+Message1
+hey from controller
+hi from Message3
+
+Q5:
+Message1
+hey from controller
+hi from Message2
+hi from Message3
+ another output:
+hey from controller
+Message1
+hi from Message3
+The getMessage1() method is called, and it prints the message "Message1" to the console and returns the string "1".
+The Controller class constructor is called. The constructor receives the bean with the qualifier "1" (which is the getMessage1() bean) and assigns it to the name. The constructor then prints the message "hey from controller" to the console.
+The getMessage2() method is called, and it prints the message "hi from Message2" to the console and returns the string "3" (which is the value returned by the getMessage3() method).
+The getMessage3() method is called, and it prints the message "hi from Message3" to the console and returns the string "3".
