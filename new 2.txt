@@ -11,9 +11,9 @@ Message1
 hi from Message3
 hi from Message2
 Another putput :
+hi from Message3
 Message1
 hi from Message2
-hi from Message3
 The  difference between the two cases is how the bean dependencies are specified and resolved. In the first case, the dependency on the "3" qualifier could not be satisfied, causing the application to fail. In the second case, the dependency on the "1" qualifier was correctly satisfied, allowing the application to execute all the bean methods successfully.
 
 
@@ -21,6 +21,27 @@ Q4:
 Message1
 hey from controller
 hi from Message3
+
+another output:
+hey from controller
+Message1
+hi from Message3
+
+another output:
+hi from Message3
+hey from controller
+Message1
+
+another output:
+hey from controller
+hi from Message3
+Message1
+
+another output:
+Message1
+hi from Message3
+hey from controller
+
 
 Q5:
 Message1
